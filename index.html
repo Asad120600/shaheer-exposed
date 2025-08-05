@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaheer Dev Exposed 🚫</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #1a0000 0%, #000 100%);
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      direction: rtl;
+      text-align: right;
+    }
+
+    header {
+      background: linear-gradient(to left, #b30000, #4d0000);
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #ff1a1a;
+    }
+
+    header h1 {
+      color: #ffff33;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px #000000;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    header p {
+      color: #ffe6e6;
+      font-size: 1rem;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #1b1b1b;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-right: 6px solid crimson;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    }
+
+    .card h2 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+      border-bottom: 2px dashed crimson;
+      padding-bottom: 0.5rem;
+    }
+
+    .urdu {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 1.4rem;
+      color: #ffc1c1;
+    }
+
+    .roast-list {
+      margin-top: 1rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    .badge {
+      background: linear-gradient(90deg, #800000, #400000);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0.3rem;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #ff0000, #cc0000);
+      color: white;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: block;
+      margin: 2rem auto;
+      animation: shake 0.8s infinite alternate;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(-1.5deg); }
+      100% { transform: rotate(1.5deg); }
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      max-width: 360px;
+      background: #330000;
+      color: #fff;
+      padding: 2rem;
+      transform: translate(-50%, -50%);
+      border: 4px solid #ff0000;
+      border-radius: 15px;
+      z-index: 1000;
+      text-align: center;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .popup.show {
+      display: block;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .card h2 {
+        font-size: 1.2rem;
+      }
+
+      .urdu {
+        font-size: 1.1rem;
+      }
+
+      .roast-list {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SHAHEER.EXPOSED</h1>
+    <p>"Laravel to framework hai... Shaheer to punishment hai"</p>
+  </header>
+
+  <div class="section">
+    <div class="card">
+      <h2>🔥 Laravel Crimes (Evidence Logged)</h2>
+      <div class="roast-list urdu">
+        <li>`php artisan down` production mein laga ke chala gaya chai pe</li>
+        <li>Validation logic controller ke andar likh kar khush ho gaya</li>
+        <li>`Auth::user()` har page pe bina check ke access karta hai</li>
+        <li>Sab kuch try-catch mein daal kar "secure" keh diya</li>
+        <li>Laravel Mix ka use nahi karta, direct CDN inject karta hai</li>
+        <li>Composer.lock delete karke "Fresh install" karwa deta hai sab ko</li>
+      </div>
+      <div class="badge">Production Butcher</div>
+      <div class="badge">Auth Abuser</div>
+      <div class="badge">TryCatch Terrorist</div>
+    </div>
+
+    <div class="card">
+      <h2>📉 Git History (Disaster Timeline)</h2>
+      <code class="roast-list">
+        • added feature<br>
+        • removed feature<br>
+        • re-added feature<br>
+        • broke everything<br>
+        • fixed it maybe<br>
+        • pushed without testing<br>
+        • forgot to pull<br>
+        • merge conflicts galore<br>
+        • deleted branch by mistake<br>
+        • commit from hell
+      </code>
+    </div>
+
+    <div class="card">
+      <h2>🧠 IQ Analysis (By Code Review Board)</h2>
+      <ul class="urdu">
+        <li>"Service layer? Kya hota hai woh?"</li>
+        <li>"Dependency injection? Manual include karo bas!"</li>
+        <li>"CSRF token ka kya karein? Disable hi kar do."</li>
+        <li>"Testing? Production mein test ho jata hai bhai!"</li>
+        <li>"Controller slim karna hai? Kyu bhai, space to hai!"</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🧨 Client Reactions (Post Deployment)</h2>
+      <div class="urdu">
+        <p>"App chalu hoti hai, lekin data delete kar ke."</p>
+        <p>"Deployment ke baad server silent ho gaya, jaise insult feel kar raha ho."</p>
+        <p>"Laravel documentation ne khud kaha — iss bande ko mat bhejo wapas."</p>
+      </div>
+    </div>
+
+    <button class="btn" onclick="showPopup()">🚫 Ban Shaheer from Laravel</button>
+    <div class="popup" id="popup">
+      <h3>🔥 Official Verdict</h3>
+      <p class="urdu">Shaheer ko Laravel ecosystem se permanently ban kar diya gaya hai. Kya aap bhi chain mehsoos kar rahe hain?</p>
+    </div>
+  </div>
+
+  <footer>
+    Built with 🔥 by survivors of Shaheer’s deployment attacks. Hosted on GitHub Pages for maximum exposure.
+  </footer>
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").classList.add("show");
+      setTimeout(() => {
+        document.getElementById("popup").classList.remove("show");
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
